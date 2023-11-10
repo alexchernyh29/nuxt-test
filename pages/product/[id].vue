@@ -1,5 +1,9 @@
 <template>
     <div>
+        <Head>
+            <Title>Nuxt-Test | {{ product.title }}</Title>
+            <Meta name="description" :content="product.description"/>
+        </Head>
         <ProductDetails :product="product" />
     </div>
 </template>
@@ -15,8 +19,10 @@ if(!product.value) {
 }
 
 definePageMeta({
-        layout: 'products'
-    })
+    layout: 'products'
+})
+
+
 </script>
 
 <style lang="scss" scoped>
