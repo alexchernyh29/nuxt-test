@@ -22,6 +22,8 @@
             name: 'description', content: 'Nuxt 3 Merch'
         }]
     })
+
+    
 </script>
 
 <style scoped>
